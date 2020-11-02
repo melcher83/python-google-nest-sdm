@@ -5,8 +5,8 @@ import mock
 from google.auth.credentials import Credentials
 from google.cloud import pubsub_v1
 
-from google_nest_sdm.device import AbstractAuth
-from google_nest_sdm.google_nest_subscriber import (
+from google_nest_sdm_jm.device import AbstractAuth
+from google_nest_sdm_jm.google_nest_subscriber import (
     AbstractSusbcriberFactory,
     GoogleNestSubscriber,
 )

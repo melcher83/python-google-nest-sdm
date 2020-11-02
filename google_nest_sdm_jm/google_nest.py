@@ -151,7 +151,7 @@ def CreateCreds(args) -> Credentials:
                 "installed": {
                     "client_id": args.client_id,
                     "client_secret": args.client_secret,
-                    "redirect_uris": ["urn:ietf:wg:oauth:2.0:oob"],
+                    "redirect_uris": ["https://www.google.com"],
                     "auth_uri": OAUTH2_AUTHORIZE.format(project_id=args.project_id),
                     "token_uri": OAUTH2_TOKEN,
                 },
@@ -216,8 +216,7 @@ class SubscribeCallback(EventCallback):
 
 async def RunTool(args, creds: Credentials):
     conn = TCPConnector(
-        family=socket.AF_INET,
-        verify_ssl=False,
+        family=socket.AF_INET
     )
     async with ClientSession(connector=conn) as client:
         auth = Auth(client, creds, API_URL)

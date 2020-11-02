@@ -1,6 +1,6 @@
 import datetime
 
-from google_nest_sdm.event import EventMessage
+from google_nest_sdm_jm.event import EventMessage
 
 
 def MakeEvent(raw_data: dict) -> EventMessage:

@@ -6,16 +6,16 @@ VERSION = '0.1.10'
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
-setup(name='google_nest_sdm',
+setup(name='google_nest_sdm_jm',
       version=VERSION,
       description='Library for the Google Nest SDM API',
       long_description=README,
       long_description_content_type="text/markdown",
       keywords='google nest sdm camera therostat security doorbell',
-      author='Allen Porter',
+      author='Allen Porter, Jonathan Melcher',
       author_email='allen@thebends.org',
       url='https://github.com/allenporter/python-google-nest-sdm',
-      packages=['google_nest_sdm'],
+      packages=['google_nest_sdm_jm'],
       include_package_data=True,
       install_requires=[
           'aiohttp>=3.6.2',
@@ -26,7 +26,7 @@ setup(name='google_nest_sdm',
       ],
       entry_points = {
           'console_scripts': [
-              'google_nest=google_nest_sdm.google_nest:main',
+              'google_nest=google_nest_sdm_jm.google_nest:main',
           ],
       },
       tests_require=[

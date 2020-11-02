@@ -1,6 +1,6 @@
 import datetime
 
-from google_nest_sdm.device import Device
+from google_nest_sdm_jm.device import Device
 
 
 def test_device_id():

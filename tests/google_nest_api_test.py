@@ -2,8 +2,8 @@ import datetime
 
 import aiohttp
 
-from google_nest_sdm import google_nest_api
-from google_nest_sdm.device import AbstractAuth
+from google_nest_sdm_jm import google_nest_api
+from google_nest_sdm_jm.device import AbstractAuth
 
 PROJECT_ID = "project-id1"
 

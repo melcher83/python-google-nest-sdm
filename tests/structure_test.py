@@ -1,4 +1,4 @@
-from google_nest_sdm.structure import Structure
+from google_nest_sdm_jm.structure import Structure
 
 
 def test_no_traits():

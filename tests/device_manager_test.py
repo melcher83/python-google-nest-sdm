@@ -1,7 +1,7 @@
-from google_nest_sdm.device import Device
-from google_nest_sdm.device_manager import DeviceManager
-from google_nest_sdm.event import EventCallback, EventMessage
-from google_nest_sdm.structure import Structure
+from google_nest_sdm_jm.device import Device
+from google_nest_sdm_jm.device_manager import DeviceManager
+from google_nest_sdm_jm.event import EventCallback, EventMessage
+from google_nest_sdm_jm.structure import Structure
 
 
 def MakeDevice(raw_data: dict) -> Device:
